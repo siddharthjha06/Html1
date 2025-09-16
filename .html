@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Form</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                <p>1.Student Information</p>
+            </legend>
+            <p>Admission Id (readonly) : <input type="text" placeholder="241511490**"></p>
+            <p>Full Name : <input type="text" placeholder="Enter your full name"></p>
+            <p>Password (min 8 characters): <input type="password" placeholder="Enter your password"></p>
+            <p>Email : <input type="email" placeholder="Enter your email"></p>
+            <p>Contact Number : <input type="number" placeholder="eg. +919876543210"></p>
+            <p>Date of Birth : <input type="date"></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </fieldset>
+            <p>Category : <select name="Category" id="Category">
+                    <option value="">Select Category</option>
+                    <option value="general">General</option>
+                    <option value="bc">BC</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                </select></p>
+            <p>Upload Passport Photo : <input type="file"></p>
+        </fieldset>
+        <fieldset>
+            <legend>2.Academic Details</legend>
+            <p>Previous Exam Details (0-100) : <input type="number"></p>
+            <p>Preferred Department : <select name="" id="" multiple>
+                    <option value="cse">Computer Science (CSE)</option>
+                    <option value="it">Information technology</option>
+                    <option value="ece">Electronics And Communication(ECE)</option>
+                    <option value="ce">Civil</option>
+                    <option value="me">Mechanical</option>
+                    <option value="ae">Aeronautical</option>
+                </select></p>
+            <p>Choose Semester Joininjg Month : <input type="month"></p>
+            <p>Class Time Preference : <input type="time"></p>
+            <p><input type="checkbox"> Hostel Required ?</p>
+            <fieldset>
+                <legend>Subjects Interestd(select all that apply)</legend>
+                <input type="checkbox">AI
+                <input type="checkbox">DBMS
+                <input type="checkbox">Networks
+                <input type="checkbox">Data science
+            </fieldset>
+            <p>Upload Resume : <input type="file" accept=".pdf" multiple></p>
+        </fieldset>
+        <fieldset>
+            <legend>3.Additional Information</legend>
+            <p>Permanent Address : <textarea name="address" rows="3" cols="40"
+                    placeholder="Street, City, State, PIN"></textarea></p>
+            <p>Hobbies : <input type="text" placeholder="Start typing........"></p>
+            <p><input type="checkbox"> Apply for scholarship</p>
+            <p>Reference Website (optional) : <input type="url" placeholder="https://example.edu"></p>
+            <p>Search For Courses : <input type="search" placeholder="Search for courses....."></p>
+        </fieldset>
+        <fieldset>
+            <legend>4.Feedback</legend>
+            <p>Rate College Facilities(1-10) : <input type="range" min="1" max="10"></p>
+            <p>Expected Hours of study per week : <input type="text"></p>
+            <p>Satisfaction meter : <meter value="0.3" min="0" max="1"></meter></p>
+            <p>Uploading Progress(example) : <progress value="40" max="100"></progress></p>
+            <p>Comments / Feedback : <textarea name="feedback" rows="4" cols="40" id="feedback"
+                    placeholder="Your feedback about college..........."></textarea></p>
+            <label>Calculated Output (example):</label>
+            <output name="result">0</output>
+        </fieldset>
+        <fieldset>
+            <legend>5.Submit</legend>
+            <button id="submit">Submit Application</button>
+            <input type="button" value="Reset">
+            <input type="button" value="Disabled Button" disabled>
+    </form>
+</body>
+
+</html>
